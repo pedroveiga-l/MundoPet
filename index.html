@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pet</title>
+
+    <link rel="stylesheet" href="src/styles/index.css">
+
+    <link rel="icon" href="src/assets/Dog-Duotone--Streamline-Phosphor.svg">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="appName">
+        <img src="src/assets/Frame 48095946.svg" alt="">
+    </div>
+
+    <div id="agenda">
+        <header>
+            <div class="header-left">
+                <h1 class="title">Sua agenda</h1>
+                <p class="paragraph-medium">
+                    Aqui você pode ver todos os clientes e serviços agendados para hoje.
+                </p>
+            </div>
+
+            <div class="date-wrapper">
+                <img src="src/assets/calendar.svg" class="icon calendar">
+
+                <input type="date" id="dateInput">
+
+                <img src="src/assets/Icon.svg" class="icon arrow">
+            </div>
+        </header>
+
+        <div id="list">
+
+            <div id="morning" class="horario">
+                <div class="header">
+                    <img src="src/assets/Sun-Fog--Streamline-Solar.svg" alt="">
+                    <p class="label-large">Manhã</p>
+                    <p class="label-large2">09h-12h</p>
+                </div>
+
+                <div class="linha"></div>
+
+                <ul class="clients">
+                    <li class="li">
+                        <span class="info">
+                            <span class="hour">9:00</span>
+                            <span class="petName">Bolt</span>
+                            <span class="proprietary"> / Pedro</span>
+                        </span>
+
+                        <span class="description">Banho e tosa</span>
+                        <button>Remover agendamento</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="afternoon" class="horario">
+                <div class="header">
+                    <img src="src/assets/Cloud-Sun-4--Streamline-Solar.svg" alt="">
+                    <p class="label-large">Tarde</p>
+                    <p class="label-large2">13h-18h</p>
+                </div>
+
+                <div class="linha"></div>
+
+                <ul class="clients">
+                    <li class="li">
+                        <span class="info">
+                            <span class="hour">9:00</span>
+                            <span class="petName">Bolt</span>
+                            <span class="proprietary"> / Pedro</span>
+                        </span>
+                        
+                        <span class="description">Banho e tosa</span>
+                        <button>Remover agendamento</button>
+                    </li>
+                    <li class="li">
+                        <span class="info">
+                            <span class="hour">9:00</span>
+                            <span class="petName">Bolt</span>
+                            <span class="proprietary"> / Pedro</span>
+                        </span>
+                        
+                        <span class="description">Banho e tosa</span>
+                        <button>Remover agendamento</button>
+                    </li>
+                    <li class="li">
+                        <span class="info">
+                            <span class="hour">9:00</span>
+                            <span class="petName">Bolt</span>
+                            <span class="proprietary"> / Pedro</span>
+                        </span>
+                        
+                        <span class="description">Banho e tosa</span>
+                        <button>Remover agendamento</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="night" class="horario">
+                <div class="header">
+                    <img src="src/assets/Moon-Stars--Streamline-Solar.svg" alt="">
+                    <p class="label-large">Noite</p>
+                    <p class="label-large2">19h-21h</p>
+                </div>
+
+                <div class="linha"></div>
+
+                <ul class="clients">
+                    <li class="li">
+                        <span class="info">
+                            <span class="hour">9:00</span>
+                            <span class="petName">Bolt</span>
+                            <span class="proprietary"> / Pedro</span>
+                        </span>
+
+                        <span class="description">Banho e tosa</span>
+                        <button>Remover agendamento</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <button id="newAdd">NOVO AGENDAMENTO</button>
+    
+    <script src="src/script.js"></script>
+</body>
+
+</html>

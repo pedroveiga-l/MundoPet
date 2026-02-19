@@ -1,0 +1,58 @@
+header h1 {
+    margin-bottom: 4px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 62px;
+}
+
+.horario {
+    background-color: var(--background-tertiary);
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.header img {
+    margin-right: 12px;
+}
+
+.label-large2 {
+    margin-left: auto;
+}
+
+.linha {
+    height: 1px;
+    background-color: var(--border-divisor);
+    width: 100%;          
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 32px;
+}
+
+.info .petName{
+    margin-left: 16px;
+    margin-right: 4px;
+}
+
+.li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.li:not(:last-child) {
+    margin-bottom: 26px;
+}
