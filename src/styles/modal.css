@@ -1,0 +1,159 @@
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 477px;
+    min-height: 730px;
+
+    background: #23242c;
+
+    position: fixed;
+    inset: 0;
+    margin: auto;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.408);
+    backdrop-filter: blur(4px);
+}
+
+.header-modal h1 {
+    margin-bottom: 4px;
+}
+
+.header-modal {
+    margin-bottom: 28px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-text p {
+    margin-bottom: 4px;
+}
+
+.input-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 16px;
+    border-radius: 8px;
+
+    border: 1px solid var(--border-primary);
+}
+
+.input-icon input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.input-icon:hover {
+    border-color: var(--border-secondary);
+}
+
+.input-icon:focus-within {
+    border-color: var(--border-brand);
+}
+
+.date-time {
+    display: flex;
+    gap: 16px;
+}
+
+.date-time .date-wrapper {
+    min-width: 190.5px;
+    background: #23242c;
+}
+
+#submitForm {
+    margin-top: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+
+    max-width: 123px;
+    max-height: 48px;
+
+    margin-left: auto;
+
+    background: var(--content-brand);
+    font: var(--label-large);
+    cursor: pointer;
+}
+
+#submitForm:hover {
+    background: #bdb4fa;
+}
+
+.input-text textarea {
+    margin-top: 4px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-primary);
+    font: var(--link);
+
+    background: #23242c;
+    color: #fff;
+    resize: none;
+
+    min-width: 397px;
+    min-height: 83px;
+}
+
+.field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.date-wrapper {
+    display: flex;
+    align-items: center;
+
+    padding-left: 8px;
+    border-radius: 8px;
+    background: #242632;
+    border: 1px solid var(--border-primary);
+
+    min-width: 190.5px;
+    min-height: 48px;
+}
+
+.date-wrapper input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+/* Chrome, Edge, Safari */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: none;
+}
+
+/* Firefox */
+input[type="time"] {
+  -moz-appearance: textfield;
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

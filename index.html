@@ -82,7 +82,7 @@
                             <span class="petName">Bolt</span>
                             <span class="proprietary"> / Pedro</span>
                         </span>
-                        
+
                         <span class="description">Banho e tosa</span>
                         <button>Remover agendamento</button>
                     </li>
@@ -92,7 +92,7 @@
                             <span class="petName">Bolt</span>
                             <span class="proprietary"> / Pedro</span>
                         </span>
-                        
+
                         <span class="description">Banho e tosa</span>
                         <button>Remover agendamento</button>
                     </li>
@@ -102,7 +102,7 @@
                             <span class="petName">Bolt</span>
                             <span class="proprietary"> / Pedro</span>
                         </span>
-                        
+
                         <span class="description">Banho e tosa</span>
                         <button>Remover agendamento</button>
                     </li>
@@ -135,8 +135,85 @@
         </div>
     </div>
 
-    <button id="newAdd">NOVO AGENDAMENTO</button>
-    
+    <button id="newAdd" data-modal="modal-1">NOVO AGENDAMENTO</button>
+
+    <dialog id="modal-1">
+        <div class="header-modal">
+            <div class="header-top">
+                <button class="close-modal" data-modal="modal-1">
+                    <h1 class="title">Agende um atendimento</h1>
+                    <img src="src/assets/Close-Small-Fill--Streamline-Rounded-Fill---Material-Symbols.svg" alt="">
+                </button>
+            </div>
+
+            <p class="paragraph-medium">
+                Preencha os dados do cliente para realizar o agendamento:
+            </p>
+        </div>
+
+
+        <form action="" id="form">
+            <div class="input-text">
+                <p class="label-medium">Nome do tutor</p>
+
+                <div class="input-icon">
+                    <img src="src/assets/User--Streamline-Solar.svg" alt="">
+                    <input type="text" id="tutorName" placeholder="Nome do tutor" required>
+                </div>
+
+
+            </div>
+
+            <div class="input-text">
+                <p class="label-medium">Nome do pet</p>
+
+                <div class="input-icon">
+                    <img src="src/assets/Pet-Paw--Streamline-Core.svg" alt="">
+                    <input type="text" id="namePet" placeholder="Nome do pet" required>
+                </div>
+
+            </div>
+
+            <div class="input-text">
+                <p class="label-medium">Telefone</p>
+
+                <div class="input-icon">
+                    <img src="src/assets/User--Streamline-Solar.svg" alt="">
+                    <input type="tel" id="phone" placeholder="(00) 0 0000-0000" required>
+                </div>
+
+            </div>
+
+            <div class="input-text">
+                <p class="label-medium">Descrição do serviço</p>
+                <textarea id="description-form" class="input-icon"  rows="3" placeholder="Banho e tosa"></textarea>
+            </div>
+
+
+            <div class="date-time">
+                <div class="field">
+                    <p class="label-medium">Data</p>
+                    <div class="date-wrapper">
+                        <img src="src/assets/calendar.svg" class="icon">
+                        <input type="date">
+                        <img src="src/assets/Icon.svg" class="icon arrow">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <p class="label-medium">Hora</p>
+                    <div class="date-wrapper">
+                        <img src="src/assets/Clock-Circle--Streamline-Solar.svg" class="icon">
+                        <input type="time">
+                        <img src="src/assets/Icon.svg" class="icon arrow">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="submitForm">AGENDAR</button>
+        </form>
+    </dialog>
+
     <script src="src/script.js"></script>
 </body>
 
