@@ -56,3 +56,17 @@ header {
 .li:not(:last-child) {
     margin-bottom: 26px;
 }
+
+/* Quando não houver agendamentos, manter o bloco visível
+   e com um fundo preenchido para evitar aparência vazia */
+.horario {
+    min-height: 120px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.clients:empty {
+    min-height: 32px;
+}

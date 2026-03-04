@@ -69,6 +69,19 @@ form {
     gap: 16px;
 }
 
+.alt {
+    border: 1px solid var(--border-primary);
+}
+
+#date-wrapper2 .icon {
+    padding-left: 10px;
+}
+
+.date-wrapper select {
+    padding-left: 10px;
+    font: 16px var(--inter);
+}
+
 .date-time .date-wrapper {
     min-width: 190.5px;
     background: #23242c;
@@ -119,33 +132,30 @@ form {
 .date-wrapper {
     display: flex;
     align-items: center;
-
-    padding-left: 8px;
     border-radius: 8px;
     background: #242632;
-    border: 1px solid var(--border-primary);
 
     min-width: 190.5px;
-    min-height: 48px;
+    min-height: 52.4px;
 }
 
-.date-wrapper input {
+.date-wrapper select {
+    margin-left: 25px;
     flex: 1;
     background: transparent;
     border: none;
     outline: none;
-    color: #fff;
+    color: var(--border-secondary);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none;
+    padding-right: 8px;
+    cursor: pointer;
 }
 
-/* Chrome, Edge, Safari */
-input[type="time"]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  display: none;
-}
-
-/* Firefox */
-input[type="time"] {
-  -moz-appearance: textfield;
+.date-wrapper select::-ms-expand {
+    display: none;
 }
 
 .close-modal {
@@ -156,4 +166,8 @@ input[type="time"] {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.hour-unavailable {
+    display: none;
 }

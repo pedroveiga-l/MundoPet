@@ -159,7 +159,6 @@ ul {
     width: 180px;
     display: flex;
     align-items: center;
-    height: 40px;
 }
 
 .date-wrapper input {
@@ -167,7 +166,8 @@ ul {
 
     padding: 14px 40px 14px 40px;
 
-    background-color: #14151D;
+    background: none;
+    background-color: transparent;
     color: var(--content-secondary);
     font: 16px var(--inter);
 
